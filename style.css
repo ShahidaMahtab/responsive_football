@@ -126,7 +126,7 @@ main {
 =================== */
 .best {
     margin: 80px 40px;
-    padding: 20px 90px;
+    padding: 40px 120px;
     /* color: #FFFF; */
     width: 100%;
 }
@@ -146,7 +146,7 @@ main {
 }
 
 .best-player {
-    margin: 20px;
+    margin: 20px 10px;
     width: 340px;
     height: 280px;
     border-radius: 12px;
