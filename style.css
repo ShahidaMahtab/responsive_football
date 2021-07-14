@@ -28,7 +28,6 @@ main {
 =================== */
 .banner {
     background: #2c09c9;
-    ;
 }
 
 .banner-container {
@@ -146,4 +145,72 @@ main {
 .footer-logo img {
     width: 484px;
     height: 110px;
+}
+
+/* end of footer */
+@media only screen and (max-width:688px) {
+    .banner-container {
+        width: 100%;
+        flex-wrap: wrap;
+        margin-bottom: 0;
+        justify-content: center;
+    }
+
+    .banner-text h1 {
+        font-size: 36px;
+    }
+
+    .banner-text {
+        margin: 100px 66px 124px 16px;
+        padding: 20px;
+        width: 278px;
+        height: 138px;
+    }
+
+
+    .banner-img {
+        margin: 51px 16px 61px 15px;
+        padding: 120px 100px 0 100px;
+        flex-direction: column;
+    }
+
+    /* players */
+    .players-container {
+        width: 100%;
+    }
+
+    .players-container {
+        grid-template-columns: repeat(1, 1fr);
+        margin-right: 16px;
+    }
+
+    .player {
+        flex-direction: column;
+    }
+
+    /* footer */
+    .footer-container {
+        margin: 43px 71px 29px 18px;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .fab {
+        font-size: 15px;
+        padding: 7px;
+        color: #969BAB;
+        background: #c5c7cc;
+        border-radius: 14px;
+
+    }
+
+    .footer-logo {
+        padding: 43px 71px 29px 18px;
+        /* padding-right: 71px; */
+    }
+
+    .footer-logo img {
+        width: 80%;
+    }
 }
