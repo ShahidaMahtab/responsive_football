@@ -10,6 +10,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    height: 90vh;
 }
 
 a {
@@ -169,14 +170,16 @@ main {
     transition: all 0.78;
 }
 
- .fa-search{
+.fa-search {
     color: #969191;
     font-size: 35px;
     text-align: center;
 }
-.fa-lightbulb{
+
+.fa-lightbulb {
     color: white;
 }
+
 .best-player:hover .photo-detail {
     display: block;
     background: #d4d4d4ec;
@@ -187,7 +190,7 @@ main {
     transition: transform 2s ease-in-out;
 }
 
-.btn-primary{
+.btn-primary {
     margin: 10px 0 5px 0;
     text-align: center;
 }
@@ -196,27 +199,41 @@ main {
 /* =====================
       Football updates
 ========================= */
-.updates{
+.updates {
     margin: 40px 20px 80px 20px;
 }
-.updates h1{
+
+.updates h1 {
     text-align: center;
-font-size: 40px;
-text-transform: capitalize;
+    font-size: 40px;
+    text-transform: capitalize;
 }
-.update-center{
+
+.update-center {
     padding: 0 20px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     text-align: center;
+
 }
-.update-icon{
-    font-size: 9em;
+
+.update-icon {
+    font-size: 8em;
     margin: 20px;
     padding: 20px 80px;
-    color: #5d0cf3;
+    color: #4701c9;
+    transition: all 0.5s ease;
 }
-.update-icon h3{
+
+.update-icon:hover {
+    transform: scale(0.7);
+    background: #1f0157;
+    color: white;
+    border-radius: 65px;
+    /* transition: transform 2s ease-in-out; */
+}
+
+.update-icon h3 {
     font-size: 24px;
     text-transform: uppercase;
 }
@@ -254,6 +271,7 @@ text-transform: capitalize;
 ==================== */
 
 @media only screen and (max-width:688px) {
+
     /* banner */
     .banner-container {
         width: 100%;
@@ -293,19 +311,23 @@ text-transform: capitalize;
     .player {
         flex-direction: column;
     }
+
     /********** best player ************/
-    .best-container{
+    .best-container {
         width: 100%;
         grid-template-columns: repeat(1, 1fr);
     }
-    .best-player{
+
+    .best-player {
         flex-direction: column;
     }
+
     /* ***************updates************* */
-    .update-center{
+    .update-center {
         width: 100%;
         grid-template-columns: repeat(1, 1fr);
     }
+
     /**************** footer**************** */
     .footer-container {
         margin: 43px 71px 29px 18px;
