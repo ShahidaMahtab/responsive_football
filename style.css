@@ -120,7 +120,108 @@ main {
 
 
 /**************************** end of players***************************** */
+/* ================
+   Best PLayer
+=================== */
+.best {
+    margin: 80px 40px;
+    padding: 20px 90px;
+    /* color: #FFFF; */
+    width: 100%;
+}
 
+.best h1 {
+    font-size: 38px;
+    margin-bottom: 40px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.best-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+.best-player {
+    margin: 20px;
+    width: 340px;
+    height: 280px;
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    border: 8px solid #ffff;
+    box-shadow: 10px 10px 40px #5c5a5a;
+}
+
+.best-img img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.photo-detail {
+    padding: 120px 190px 140px 160px;
+    display: none;
+    position: absolute;
+    top: 0;
+    transition: all 0.78;
+}
+
+ .fa-search{
+    color: #969191;
+    font-size: 35px;
+    text-align: center;
+}
+.fa-lightbulb{
+    color: white;
+}
+.best-player:hover .photo-detail {
+    display: block;
+    background: #d4d4d4ec;
+}
+
+.best-player:hover .best-img {
+    transform: scale(1.5);
+    transition: transform 2s ease-in-out;
+}
+
+.btn-primary{
+    margin: 10px 0 5px 0;
+    text-align: center;
+}
+
+/* *******************************************end of best player******************************** */
+/* =====================
+      Football updates
+========================= */
+.updates{
+    margin: 40px 20px 80px 20px;
+}
+.updates h1{
+    text-align: center;
+font-size: 40px;
+text-transform: capitalize;
+}
+.update-center{
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+}
+.update-icon{
+    font-size: 9em;
+    margin: 20px;
+    padding: 20px 80px;
+    color: #5d0cf3;
+}
+.update-icon h3{
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+/* *****************************************end of updates************************************* */
 /* ================
    Footer
 =================== */
@@ -148,7 +249,12 @@ main {
 }
 
 /* end of footer */
+/* ======================
+        Mobile Devices
+==================== */
+
 @media only screen and (max-width:688px) {
+    /* banner */
     .banner-container {
         width: 100%;
         flex-wrap: wrap;
@@ -187,8 +293,20 @@ main {
     .player {
         flex-direction: column;
     }
-
-    /* footer */
+    /********** best player ************/
+    .best-container{
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .best-player{
+        flex-direction: column;
+    }
+    /* ***************updates************* */
+    .update-center{
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    /**************** footer**************** */
     .footer-container {
         margin: 43px 71px 29px 18px;
         width: 100%;
